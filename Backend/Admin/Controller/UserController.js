@@ -87,6 +87,7 @@ const deleteUser = async (req, res) => {
           { new: true }
       );
 
+      console.log("deleted user", result);
       if (!result) {
           return res.status(404).json({ message: "User not found." });
       }

@@ -25,7 +25,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="bg-sky-50 flex justify-center items-center min-h-screen">
       <form
         ref={form}
         onSubmit={sendEmail}
@@ -63,7 +63,7 @@ export const ContactUs = () => {
 
         <button
           type="submit"
-          className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 rounded-lg mt-6 font-semibold text-lg shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
+          className="w-full bg-blue-400 text-white py-3 rounded-lg mt-6 font-semibold text-lg shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
         >
           Send Message
         </button>

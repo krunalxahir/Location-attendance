@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { FaUserAlt, FaEnvelope, FaBuilding, FaBriefcase } from "react-icons/fa";
 import axios from 'axios';
 import Navbar from './Navbar';
-import Footer from './Footer';
 
 
 function Profile() {  // 🔹 FIX: Renamed function from DisplayData to Profile
@@ -86,7 +85,6 @@ function Profile() {  // 🔹 FIX: Renamed function from DisplayData to Profile
       </div>
     </div>
         )
-           <Footer/>
         </>
     );
 }

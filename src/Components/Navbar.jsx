@@ -30,9 +30,9 @@ function Navbar() {
         >
          <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
             <li className="hover:text-blue-500 font-bold"><Link to="/index">Home</Link></li>
+            <li className="hover:text-blue-500 font-bold"><Link to="/about">About </Link></li>
             <li className="hover:text-blue-500 font-bold"><Link to="/date">Clock-in</Link></li>
             <li className="hover:text-blue-500 font-bold"><Link to="/logout">Clock-out</Link></li>
-            <li className="hover:text-blue-500 font-bold"><Link to="/about">About Us</Link></li>
             <li className="hover:text-blue-500 font-bold"><Link to="/help">Help</Link></li>
         </ul>
         </div>

@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 function AdminDashboard() {
@@ -88,7 +86,7 @@ function AdminDashboard() {
     if (users.length === 0) return <p>Loading user data...</p>;
 
     return (
-        <div className="container mx-auto p-8 bg-gradient-to-b from-white to-blue-200 min-h-screen">
+        <div className="container mx-auto p-8 bg-sky-50 min-h-screen">
             <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">Attendance Summary</h1>
             <div className="grid md:grid-cols-2 gap-8">
                 {users.map((user, index) => {
@@ -113,7 +111,7 @@ function AdminDashboard() {
                             </h3>
                             <ul className="mt-4 space-y-4">
                                 {user.loginTimes.slice(0, visibleCount).map((login, idx) => (
-                                    <li key={idx} className="bg-gray-200 p-4 rounded-lg">
+                                    <li key={idx} className="bg-gray-100 p-4 rounded-lg">
                                         <p className="text-gray-800">
                                             <strong>Login Time:</strong> {new Date(login.time).toLocaleString()}
                                         </p>
